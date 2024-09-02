@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Music</title>
+
+    <!------------------------------------ bootstrap cdn ------------------------------->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--------------------- font awesome ------------------->
+
+    <script
+      src="https://kit.fontawesome.com/b9166b9cf1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!--  -->
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <!------------------------ nav section ------------------------->
+
+        <nav>
+          <input type="checkbox" name="" id="chk1" />
+          <ul>
+            <li class="nav-item">
+              <a href="#header"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://yogita-22.github.io/music-search/" class="btn"
+                ><i class="fa-solid fa-magnifying-glass"></i>Search</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#">New Songs</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Old Songs</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Hip Hop</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">POP</a>
+            </li>
+
+            <!----------------- songs dropdown section -------------------->
+
+            <li class="nav-item dropdown">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Moods
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Party Songs</a></li>
+                <li><a class="dropdown-item" href="#">Dance Songs</a></li>
+                <li><a class="dropdown-item" href="#">BollyWood Songs</a></li>
+                <li><a class="dropdown-item" href="#">HollyWood Songs</a></li>
+                <li><a class="dropdown-item" href="#">90's Hits</a></li>
+                <li><a class="dropdown-item" href="#">Gazals</a></li>
+                <li><a class="dropdown-item" href="#">Lofi</a></li>
+              </ul>
+            </li>
+
+            <!----------------- album dropdown section -------------------->
+
+            <li class="nav-item dropdown">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Albums
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hindi Albums</a></li>
+                <li><a class="dropdown-item" href="#">Bhagti Albums</a></li>
+                <li><a class="dropdown-item" href="#">Telgu Albums</a></li>
+                <li><a class="dropdown-item" href="#">Tamil Albums</a></li>
+                <li><a class="dropdown-item" href="#">Punjabi Albums</a></li>
+                <li><a class="dropdown-item" href="#">Bhojpuri Albums</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="menu">
+            <label for="chk1">
+              <i class="fa fa-bars"></i>
+            </label>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--------------------- banner-section -------------------->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/c96532c78f4ac846387c6b4758bda34b.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/abstract-music-soundwave-banner-design-free-vector.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/gradient-colorful-music-festival-twitch-banner_23-2149081361.avif"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--------------------- main section --------------------->
+
+    <!--  -->
+
+    <div class="main">
+      <div class="container">
+        <!--  -->
+
+        <div class="singers-section">
+          <div class="heading">
+            <h3>Popular Singers</h3>
+          </div>
+
+          <!------------ show all ------------->
+          <div class="a">
+            <a href="https://yogita-22.github.io/music-all/">Show All</a>
+          </div>
+
+          <div class="singers">
+            <div class="singer">
+              <img src="img/shreya-ghoshal.avif" alt="" />
+              <h6>Shreya Ghoshal</h6>
+              <p>Artist</p>
+            </div>
+
+            <div class="singer">
+              <img src="img/images.jpeg" alt="" />
+              <h6>Arijit Singh</h6>
+              <p>Artist</p>
+            </div>
+
+            <div class="singer">
+              <img src="img/pritam.jpeg" alt="" />
+              <h6>Pritam</h6>
+              <p>Artist</p>
+            </div>
+
+            <div class="singer">
+              <img src="img/rehman3.jpeg" alt="" />
+              <h6>A.R. Rehman</h6>
+              <p>Artist</p>
+            </div>
+
+            <div class="singer">
+              <img src="img/1696453031994-Lata.jpeg" alt="" />
+              <h6>Lata Mngeshkar</h6>
+              <p>Artist</p>
+            </div>
+
+            <div class="singer">
+              <img src="img/honey singh.jpeg" alt="" />
+              <h6>Yo Yo Honey Singh</h6>
+              <p>Artist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------- popular album --------------------------->
+
+      <div class="container">
+        <div class="Albums">
+          <div class="heading">
+            <h3>Popular Albums</h3>
+          </div>
+
+          <div class="album">
+            <div class="card">
+              <a href="#"
+                ><img src="img/download.jpeg" class="card-img-top" alt="..." />
+                <h6>Romance</h6>
+                <p>Fontaines D.C.</p></a
+              >
+            </div>
+
+            <div class="card">
+              <a href="#"
+                ><img src="img/ek tha raja.jpeg" alt="" />
+                <h6>Ek tha raja</h6>
+                <p>Badsha</p>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#"
+                ><img src="img/tum se.jpg" alt="" />
+                <h6>Tum Se</h6>
+                <p>Raghav Chaitanya, Varun Jain, Sachin–Jigar</p>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#"
+                ><img src="img/ariana3.png" alt="" />
+                <h6>we can’t be friends</h6>
+                <p>Ariana Grande</p>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#"
+                ><img src="img/water.jpeg" alt="" />
+                <h6>Water</h6>
+                <p>Tyla</p>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#"
+                ><img src="img/bloodline.jpg" alt="" />
+                <h6>Bloodline</h6>
+                <p>Ariana Grande</p>
+              </a>
+            </div>
+
+            <!-- ----- -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------- Playlist section--------------------------->
+
+    <div class="playlist">
+      <div class="container">
+        <div class="heading">
+          <h3>Playlist</h3>
+        </div>
+
+        <div class="playlist-list">
+          <div class="list1">
+            <a href="#">
+              <h4>Top Songs <br />Global</h4>
+            </a>
+          </div>
+
+          <div class="list2">
+            <a href="#">
+              <h4>Top Songs <br />India</h4>
+            </a>
+          </div>
+
+          <div class="list3">
+            <a href="#">
+              <h4>Top Songs <br />2024</h4>
+            </a>
+          </div>
+
+          <div class="list4">
+            <a href="#">
+              <h4>Top 50 <br />Global</h4>
+            </a>
+          </div>
+
+          <div class="list5">
+            <a href="#">
+              <h4>Top 50 <br />India</h4>
+            </a>
+          </div>
+
+          <!------------------->
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-------------------------- footer section ---------------------------->
+
+    <div class="footer">
+      <div class="container">
+        <footer>
+          <div class="footer-item">
+            <h5>Company</h5>
+            <div class="links">
+              <a href="#">About</a>
+              <a href="#">For the Record</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h5>Useful links</h5>
+            <div class="links">
+              <a href="#">Support</a>
+              <a href="#">Free Mobile App</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h5>Our Plans</h5>
+            <div class="links">
+              <a href="#">Premium Individual</a>
+              <a href="#">Premium Duo</a>
+              <a href="#">Premium Family</a>
+              <a href="#">Premium Student</a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-------------- script --------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
