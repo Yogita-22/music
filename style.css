@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* ------------------nav section-------------- */
+
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    top: 0;   
+    left: 0;  
+    background-color: black;  
+    padding: 5px 20px;
+    
+}
+
+
+
+nav .logo {
+    flex: 1;
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav .menu {
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: 50px;
+    display: none;
+}
+
+#chk1 {
+    display: none;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.dropdown a{
+    color: white;
+}
+
+
+.dropdown-menu li a{
+    color: #000;
+}
+nav ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+
+.nav-item a:hover{
+    color: #ff004f;
+    font-weight: bolder;
+
+}
+
+
+
+.btn{
+    color: white;
+    font-weight: 600;
+}
+
+.btn :hover{
+    font-weight: bold;
+}
+
+/*-------------------- banner section --------------------*/
+
+
+.carousel-inner{
+    
+    height: 200px;
+
+}
+
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* ---------------------main section------------------------ */
+
+
+
+.heading h3{
+    font-weight: bold;
+    justify-content: center;
+}
+.singers, .album{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+.singer:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.singers img {
+   
+    border-radius: 50%;
+    width: 160px;
+    
+}
+
+.album{
+    padding-bottom: 7rem;
+}
+
+
+.album img{
+    border-radius: 10px;
+    width: 170px;
+}
+
+.singer h6{
+    padding-top: 2px;
+}
+
+
+
+.card {
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+.card a{
+    color: white;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+.container a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.a a:hover{
+    text-decoration: underline #ff004f;
+}
+
+
+/*--------------------------- playlist-section ----------------------------*/
+
+
+.playlist-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.list1, .list2, .list3, .list4, .list5{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.list1{
+    background-color:rgb(241, 45, 78);
+}
+
+
+.list2{
+    background-color: rgb(146, 30, 208);
+}
+
+.list3 {
+    background-color: rgb(30, 208, 193);
+}
+
+.list4{
+    background-color: rgb(208, 134, 30);
+}
+
+.list5 {
+    background-color: rgb(30, 208, 60);
+}
+
+
+.list1 :hover,.list2 :hover,.list3 :hover,.list4 :hover,.list5 :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+/*---------------------------- footer-section -------------------------*/
+
+.footer{
+    margin-top: 30px;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+
+}
+
+
+.links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+/*----------------------------- social media icons section ----------------------------*/
+
+
+.social-icons {
+    font-size: 12px;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    color: #ff004f;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+
+.social-icons a i:hover {
+    color: #ff004f;
+}
+
+
+/* -------------------- media query -----------------------*/
+
+
+
+@media (max-width: 1000px) {
+    nav ul {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        height: calc(50vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    nav .menu {
+        display: block;
+        width: 100px;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    #chk1:checked~ul {
+        right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    nav .logo {
+        font-size: 10px;
+        margin-left: 8px;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .singers,.album {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+    
+
+
+    .playlist-list{
+        flex-wrap: wrap;
+    }
+
+    .playlist-list> div{
+        margin-top: 10px;
+    }
+
+
+    footer {
+        max-width: 90vw;
+    }
+    .footer-item{
+        justify-content: center;
+        align-items: center;
+        gap:2px;
+    }
+
+    .link  a{
+        margin-top: 8px;
+    }
+
+    .footer {
+        gap: 25px;
+    }
+}
